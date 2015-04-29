@@ -138,7 +138,7 @@ unsigned int hashmap_hash_int(hashmap_map * m, unsigned int key){
     return key % m->table_size;
 }
 
-uint32_t hash_func(char* keystring){
+unsigned int hash_func(char* keystring){
     /* Robert Jenkins' 32 bit Mix Function */
     unsigned long key = crc32((unsigned char*)(keystring), strlen(keystring));
     key += (key << 12);
@@ -156,7 +156,7 @@ uint32_t hash_func(char* keystring){
     return key % INITIAL_SIZE;
 }
 
-uint32_t hash_func_int(uint32_t key){
+unsigned int hash_func_int(unsigned int key){
     /* Robert Jenkins' 32 bit Mix Function */
     key += (key << 12);
     key ^= (key >> 22);

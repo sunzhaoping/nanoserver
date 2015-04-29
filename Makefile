@@ -4,7 +4,7 @@ CFLAGS=-I$(IDIR)
 ODIR=obj
 LDIR =/usr/local/lib
 
-LIBS=-lm -lev -lpthread
+LIBS=-lm -lev -lpthread -lrt 
 
 _DEPS = 
 DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))

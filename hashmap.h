@@ -34,7 +34,7 @@ typedef any_t map_t;
 extern map_t hashmap_new();
 
 extern unsigned int hash_func(char* key);
-extern unsigned int hash_func_int(uint32_t key);
+extern unsigned int hash_func_int(unsigned int key);
 /*
  * Iteratively call f with argument (item, data) for
  * each element data in the hashmap. The function must
