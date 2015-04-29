@@ -1,2 +1,2 @@
 # nanoserver
-a small event based pubsub message broker
+a small event based multi-threaded pubsub message broker
